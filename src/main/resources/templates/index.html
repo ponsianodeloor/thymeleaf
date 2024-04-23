@@ -13,6 +13,10 @@
     <br>
     this is a message, <span th:text="${message}">Hello</span>!
 </p>
+<div th:with="someVariable = ${someValue}, a=20, b=30">
+    <p th:text="${someVariable}">Some value</p>
+    <p th:text="${a}*${b}"></p>
+</div>
 <p><a th:href="@{/about}">About</a></p>
 </body>
 </html>
