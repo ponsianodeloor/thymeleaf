@@ -19,4 +19,10 @@ public class MainController {
     public String about() {
         return "about";
     }
+
+    @GetMapping("/admin")
+    public String admin(Model model) {
+        model.addAttribute("isAdmin", true);
+        return "admin";
+    }
 }
