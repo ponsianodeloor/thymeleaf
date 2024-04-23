@@ -26,4 +26,10 @@ public class MainController {
         model.addAttribute("country", "EC");
         return "admin";
     }
+
+    @GetMapping("/iterate")
+    public String iterate(Model model) {
+        model.addAttribute("countries", new String[]{"EC", "CO", "PE", "BR", "AR"});
+        return "iterate";
+    }
 }
