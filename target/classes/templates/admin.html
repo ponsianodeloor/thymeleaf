@@ -13,6 +13,7 @@
 <p th:if="${isAdmin}">Welcome, Admin</p>
 
 <p th:with="isAdmin=false">
+    <span th:if="${isAdmin}">You are an admin</span>
     <span th:unless="${isAdmin}">You are not an admin</span>
     <span th:text="${isAdmin} ? 'Is admin' : 'Is not admin'"></span>
 </p>
