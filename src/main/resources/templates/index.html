@@ -7,6 +7,10 @@
 <body>
 <h1>Main</h1>
 <p>This is a simple Spring Boot web application.</p>
+<p>
+    Welcome, <span th:text="${name}">User</span>!
+    this is a message, <span th:text="${message}">Hello</span>!
+</p>
 <p><a th:href="@{/about}">About</a></p>
 </body>
 </html>
