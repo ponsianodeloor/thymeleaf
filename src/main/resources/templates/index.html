@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Main</title>
+    <link rel="stylesheet" th:href="@{/css/main.css}">
 </head>
 <body>
 <h1>Main</h1>
@@ -17,6 +18,8 @@
     <p th:text="${someVariable}">Some value</p>
     <p th:text="${a}*${b}"></p>
 </div>
+<button id="click-button" onclick="main()">Click me</button>
 <p><a th:href="@{/about}">About</a></p>
+<script th:src="@{/js/main.js}"></script>
 </body>
 </html>
