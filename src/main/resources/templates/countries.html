@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Countries</title>
+</head>
+<body>
+
+<table border="1">
+    <tr>
+        <th>Country</th>
+        <th>Capital</th>
+        <th>Population</th>
+    </tr>
+    <!-- Iterate over the list of countries -->
+    <tr th:each="country : ${countries}">
+        <td th:text="${country.name}"></td>
+        <td th:text="${country.capital}"></td>
+        <td th:text="${country.population}"></td>
+    </tr>
+</table>
+
+</body>
+</html>
