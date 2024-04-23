@@ -7,6 +7,8 @@
 </head>
 <body>
 
+<header th:include="fragment/demo :: header"></header>
+<header th:insert="fragment/demo :: header"></header>
 <header th:replace="fragment/demo :: header"></header>
 
 <h1>Main</h1>
@@ -23,6 +25,8 @@
 </div>
 <button id="click-button" onclick="main()">Click me</button>
 
+<footer th:include="fragment/demo :: footer"></footer>
+<footer th:insert="fragment/demo :: footer"></footer>
 <footer th:replace="fragment/demo :: footer"></footer>
 
 <p><a th:href="@{/about}">About</a></p>
