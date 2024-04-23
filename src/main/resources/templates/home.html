@@ -6,6 +6,9 @@
     <link rel="stylesheet" th:href="@{/css/main.css}">
 </head>
 <body>
+
+<header th:replace="fragment/demo :: header"></header>
+
 <h1>Main</h1>
 <p>This is a simple Spring Boot web application.</p>
 <p>
@@ -19,6 +22,9 @@
     <p th:text="${a}*${b}"></p>
 </div>
 <button id="click-button" onclick="main()">Click me</button>
+
+<footer th:replace="fragment/demo :: footer"></footer>
+
 <p><a th:href="@{/about}">About</a></p>
 <script th:src="@{/js/main.js}"></script>
 </body>

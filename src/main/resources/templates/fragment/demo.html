@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fragment</title>
+</head>
+<body>
+
+<!-- This is a fragment that can be included in other pages -->
+<header th:fragment="header" id="-fragment-header">
+    <h1 id="header">
+        Header From Demo Fragments
+    </h1>
+</header>
+
+
+
+<!-- This is a fragment that can be included in other pages -->
+<footer th:fragment="footer" id="-fragment-footer">
+    <h1 id="footer">
+        Footer From Demo Fragments
+    </h1>
+</footer>
+
+</body>
+</html>

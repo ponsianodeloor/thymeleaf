@@ -10,12 +10,12 @@ import java.util.List;
 @Controller
 public class MainController {
 
-    @GetMapping("/")
+    @GetMapping("/home")
     public String index(Model model) {
         model.addAttribute("name", "Ponsiano Thomas");
         model.addAttribute("lastName", "de loor sizalema");
         model.addAttribute("message", "Hello, World!");
-        return "index";
+        return "home";
     }
 
     @GetMapping("/about")
