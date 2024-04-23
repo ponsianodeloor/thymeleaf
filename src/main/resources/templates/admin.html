@@ -20,6 +20,14 @@
 
 <p th:text="${isAdmin} ? 'Is admin' : 'Is not admin'"></p>
 
+<div th:switch="${country}">
+    <p th:case="'US'">United States</p>
+    <p th:case="'UK'">United Kingdom</p>
+    <p th:case="'FR'">France</p>
+    <p th:case="'EC'">Ecuador</p>
+    <p th:case="*">Unknown</p>
+</div>
+
 <p><a href="/">Main</a></p>
 </body>
 </html>

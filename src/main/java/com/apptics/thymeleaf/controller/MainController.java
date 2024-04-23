@@ -23,6 +23,7 @@ public class MainController {
     @GetMapping("/admin")
     public String admin(Model model) {
         model.addAttribute("isAdmin", true);
+        model.addAttribute("country", "EC");
         return "admin";
     }
 }
